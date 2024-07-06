@@ -28,7 +28,7 @@ def set_png_as_page_bg(png_file):
     page_bg_img = '''
     <style>
     body {
-    background-image: url("data:image1/jpg;base64,%s");
+    background-image: url("data:image/jpg;base64,%s");
     background-size: cover;
     }
     </style>
@@ -37,7 +37,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg('background.png')
+set_png_as_page_bg('image1.jpg')
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
