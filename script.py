@@ -10,19 +10,12 @@ st.set_page_config(
     layout="wide"
 )
 
-# primaryColor = st.get_option("theme.primaryColor")
-# secondaryColor = st.get_option("theme.secondaryBackgroundColor")
-# backgroundColor = st.get_option("theme.backgroundColor")
-# textColor = st.get_option("theme.textColor")
-# font=st.get_option("theme.font")
+primaryColor = st.get_option("theme.primaryColor")
+secondaryColor = st.get_option("theme.secondaryBackgroundColor")
+backgroundColor = st.get_option("theme.backgroundColor")
+textColor = st.get_option("theme.textColor")
+font=st.get_option("theme.font")
 
-css="""
-<style>
-    [data-testid="stForm"] {
-        background: LightBlue;
-    }
-</style>
-"""
 st.write(css, unsafe_allow_html=True)
 
 st.title("MakeAnyPlot")
