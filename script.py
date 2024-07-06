@@ -3,6 +3,16 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
+
+[theme]
+primaryColor="#ffffff"
+backgroundColor="#000000"
+secondaryBackgroundColor="#19617f"
+textColor="#ffffff"
+
+[deprecation]
+showPyplotGlobalUse = false
+
 st.set_page_config(
     page_title="MakeAnyPlot",
     page_icon="📈",  
