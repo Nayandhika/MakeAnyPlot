@@ -16,20 +16,16 @@ st.set_page_config(
 # textColor = st.get_option("theme.textColor")
 # font=st.get_option("theme.font")
 
-def add_bg_from_local():
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("./static/image1.jpg");
-            background-size: cover;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=3&from_view=keyword&track=ais_user&uuid=9f5c1173-7cb6-485e-b799-1a47df1e8a8e");
+background-size: cover;
+}
+</style>
+'''
 
-add_bg_from_local()
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
