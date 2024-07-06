@@ -16,7 +16,20 @@ st.set_page_config(
 # textColor = st.get_option("theme.textColor")
 # font=st.get_option("theme.font")
 
-st.markdown("""<style>.stApp {background-image: url('/static/image1.jpg');background-size: cover;}</style>""", unsafe_allow_html=True)
+def add_bg_from_local():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("./static/image1.jpg");
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+add_bg_from_local()
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
