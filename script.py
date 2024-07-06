@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
+import base64
 
 st.set_page_config(
     page_title="MakeAnyPlot",
@@ -16,16 +17,25 @@ st.set_page_config(
 # textColor = st.get_option("theme.textColor")
 # font=st.get_option("theme.font")
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=3&from_view=keyword&track=ais_user&uuid=9f5c1173-7cb6-485e-b799-1a47df1e8a8e");
-background-size: cover;
-}
-</style>
-'''
+main_bg = "image1.jpg"
+main_bg_ext = "jpg"
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+side_bg = "image1.jpg"
+side_bg_ext = "jpg"
+
+st.markdown(
+    f"""
+    <style>
+    .reportview-container {{
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    }}
+   .sidebar .sidebar-content {{
+        background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
