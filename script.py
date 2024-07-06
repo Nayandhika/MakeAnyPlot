@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("MakeAnyPlot")
 st.markdown("""---""")
 uploadedFile = st.file_uploader('Upload File', type=['csv','xlsx'],accept_multiple_files=False,key="fileUploader")
-st.sidebar.image('/Volumes/Nayandhika/Documents/MakeAnyPlot/image.jpg')
+st.sidebar.image('image.jpg')
 st.sidebar.markdown("""---""")
 if uploadedFile is not None:
     try:
