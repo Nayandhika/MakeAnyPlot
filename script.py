@@ -19,13 +19,6 @@ st.set_page_config(
 # font=st.get_option("theme.font")
 
 def set_bg_hack_url():
-    '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
-    '''
-        
     st.markdown(
          f"""
          <style>
