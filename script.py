@@ -9,6 +9,13 @@ st.set_page_config(
     page_icon="📈",  
     layout="wide"
 )
+
+primaryColor = st.get_option("theme.primaryColor")
+secondaryColor = st.get_option("theme.secondaryBackgroundColor")
+backgroundColor = st.get_option("theme.backgroundColor")
+textColor = st.get_option("theme.textColor")
+font=st.get_option("theme.font")
+
 st.title("MakeAnyPlot")
 st.markdown("""---""")
 uploadedFile = st.file_uploader('Upload File', type=['csv','xlsx'],accept_multiple_files=False,key="fileUploader")
