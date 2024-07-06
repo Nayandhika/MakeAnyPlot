@@ -17,7 +17,6 @@ st.set_page_config(
 # font=st.get_option("theme.font")
 
 st.markdown(
-    """
     <style>
     .reportview-container {
         background: url("https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32993994.htm#query=dark%20website%20background&position=3&from_view=keyword&track=ais_user&uuid=9f5c1173-7cb6-485e-b799-1a47df1e8a8e")
@@ -25,8 +24,7 @@ st.markdown(
    .sidebar .sidebar-content {
         background: url("url_goes_here")
     }
-    </style>
-    """,
+    </style>,
     unsafe_allow_html=True
 )
 
