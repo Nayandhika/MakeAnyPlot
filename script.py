@@ -10,11 +10,20 @@ st.set_page_config(
     layout="wide"
 )
 
-primaryColor = st.get_option("theme.primaryColor")
-secondaryColor = st.get_option("theme.secondaryBackgroundColor")
-backgroundColor = st.get_option("theme.backgroundColor")
-textColor = st.get_option("theme.textColor")
-font=st.get_option("theme.font")
+# primaryColor = st.get_option("theme.primaryColor")
+# secondaryColor = st.get_option("theme.secondaryBackgroundColor")
+# backgroundColor = st.get_option("theme.backgroundColor")
+# textColor = st.get_option("theme.textColor")
+# font=st.get_option("theme.font")
+
+background_html = """
+<style>
+body {
+background-image: url(image1.jpg);
+background-size: cover;
+}
+</style>
+"""
 
 
 st.title("MakeAnyPlot")
