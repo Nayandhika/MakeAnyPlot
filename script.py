@@ -18,7 +18,26 @@ st.set_page_config(
 # textColor = st.get_option("theme.textColor")
 # font=st.get_option("theme.font")
 
-
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+set_bg_hack_url()
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
