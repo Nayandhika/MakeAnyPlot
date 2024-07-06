@@ -9,7 +9,7 @@ st.set_page_config(
     page_title="MakeAnyPlot",
     page_icon="📈",  
     layout="wide",
-    page_background = 'image1.jpg'
+    initial_sidebar_state="expanded"
 )
 
 # primaryColor = st.get_option("theme.primaryColor")
