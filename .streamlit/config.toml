@@ -1,8 +1,8 @@
-# [theme]
-# primaryColor="#ffffff"
-# backgroundColor="#000000"
-# secondaryBackgroundColor="#19617f"
-# textColor="#ffffff"
+[theme]
+primaryColor="#ffffff"
+backgroundColor="#000000"
+secondaryBackgroundColor="#2a6169"
+textColor="#ffffff"
 
 [deprecation]
 showPyplotGlobalUse = false
