@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
-import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title="MakeAnyPlot",
@@ -17,15 +16,7 @@ st.set_page_config(
 # textColor = st.get_option("theme.textColor")
 # font=st.get_option("theme.font")
 
-background_html = """
-<style>
-body {
-background-image: url(image1.jpg);
-background-size: cover;
-}
-</style>
-"""
-components.html(background_html, height=0)
+st.markdown("""<style>.stApp {background-image: url('/static/image1.jpg');background-size: cover;}</style>""", unsafe_allow_html=True)
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
