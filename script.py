@@ -16,7 +16,6 @@ backgroundColor = st.get_option("theme.backgroundColor")
 textColor = st.get_option("theme.textColor")
 font=st.get_option("theme.font")
 
-st.write(css, unsafe_allow_html=True)
 
 st.title("MakeAnyPlot")
 st.markdown("""---""")
