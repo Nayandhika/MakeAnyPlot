@@ -1,5 +1,7 @@
 # MakeAnyPlot
 
+"MakeAnyPlot" is a versatile data visualization project designed to handle CSV and Excel files for interactive plotting.
+
 Data Input and Display:
 
   1. Accepts CSV or Excel files as input.
